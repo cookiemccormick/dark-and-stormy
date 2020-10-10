@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def home
-    @recipes = Recipe.all.most_recent(5)
+    @recipes = Recipe.most_recent(5)
   end
 end
